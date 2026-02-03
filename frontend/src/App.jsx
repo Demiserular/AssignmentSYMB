@@ -6,7 +6,7 @@ import Withdraw from './components/Withdraw'
 import Transfer from './components/Transfer'
 import AccountList from './components/AccountList'
 
-const API = import.meta.env.VITE_API_URL || 'http://localhost:4000/api'
+const API = import.meta.env.VITE_API_URL || 'https://assignmentsymb-backend.onrender.com/api'
 
 export default function App() {
   const [accounts, setAccounts] = useState([])

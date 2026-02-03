@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 // Professional banking-grade create account form
-const API = import.meta.env.VITE_API_URL || 'http://localhost:4000/api'
+const API = import.meta.env.VITE_API_URL || 'https://assignmentsymb-backend.onrender.com/api'
 
 export default function CreateAccount({ onSuccess }) {
   const [form, setForm] = useState({ accountNo: '', holderName: '', initialBalance: '', isKYCVerified: false, kycCode: '' })

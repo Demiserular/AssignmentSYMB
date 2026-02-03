@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 // Professional banking-grade withdraw form
-const API = import.meta.env.VITE_API_URL || 'http://localhost:4000/api'
+const API = import.meta.env.VITE_API_URL || 'https://assignmentsymb-backend.onrender.com/api'
 
 export default function Withdraw({ onSuccess }) {
   const [form, setForm] = useState({ accountNo: '', amount: '' })

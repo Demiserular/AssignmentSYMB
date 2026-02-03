@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 // Professional banking-grade transfer form — validates on backend
-const API = import.meta.env.VITE_API_URL || 'http://localhost:4000/api'
+const API = import.meta.env.VITE_API_URL || 'https://assignmentsymb-backend.onrender.com/api'
 
 export default function Transfer({ onSuccess }) {
   const [form, setForm] = useState({ from: '', to: '', amount: '' })
