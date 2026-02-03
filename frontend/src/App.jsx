@@ -10,7 +10,7 @@ const API = import.meta.env.VITE_API_URL || 'https://assignmentsymb-backend.onre
 
 export default function App() {
   const [accounts, setAccounts] = useState([])
-  const [view, setView] = useState('home')
+  const [view, setView] = useState('accounts')
 
   const refresh = async () => {
     try {
@@ -34,12 +34,6 @@ export default function App() {
       <Navbar current={view} onNavigate={setView} />
 
       <main className="app-main">
-        {view === 'home' && (
-          <div className="home-view">
-            <AccountList accounts={accounts} />
-          </div>
-        )}
-
         {view === 'create' && (
           <CreateAccount onSuccess={refresh} />
         )}

@@ -3,12 +3,11 @@ import React from 'react'
 // Main thing in navbar is accessibility 
 export default function Navbar({ current, onNavigate }) {
   const items = [
-    { key: 'home', label: 'Home' },
+    { key: 'accounts', label: 'Accounts' },
     { key: 'create', label: 'Create Account' },
     { key: 'deposit', label: 'Deposit' },
     { key: 'withdraw', label: 'Withdraw' },
-    { key: 'transfer', label: 'Transfer' },
-    { key: 'accounts', label: 'Accounts' }
+    { key: 'transfer', label: 'Transfer' }
   ]
 
   return (
